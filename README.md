@@ -17,17 +17,23 @@ $ python -m http.server
 
 or with includes and everything
 
-Linux:
-
+## Linux:
+First time
 ```
-$ sudo apt install php-cgi php-xml
+$ sudo apt install php-cgi php-xml python3-virtualenv (?)
 $ virtualenv -p python2 env
 $ source env/bin/activate
 $ pip install bottle eventlet
 $ ./ssi-server --skip-missing
 ```
+To-Do: Switch to Python3
 
-Windows (cmd):
+Second start (when environment is not activated)
+```
+$ source env/bin/activate
+$ ./ssi-server --skip-missing
+```
+## Windows (cmd):
 
 download and unpack PHP: https://windows.php.net/download/
 
