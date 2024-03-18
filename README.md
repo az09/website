@@ -35,13 +35,13 @@ $ ./ssi-server --skip-missing
 ```
 ## Windows (cmd):
 
-download and unpack PHP: https://windows.php.net/download/
+[Download](https://windows.php.net/download/) and unpack PHP into `c:\tools\php` for example.
 
 ```
+set path=%path%;c:\tools\php
 c:\Python39\Scripts\pip install virtualenv
 c:\Python39\Scripts\virtualenv.exe -p python2 env
 env\Scripts\activate
-set path=%path%;c:\tools\php
 pip install bottle eventlet
 python ssi-server --skip-missing
 ```
