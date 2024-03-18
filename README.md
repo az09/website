@@ -10,7 +10,6 @@ $ cd website
 
 There are 2 ways to run the development server:
 
-
 ```
 $ python -m http.server
 ```
@@ -18,15 +17,16 @@ $ python -m http.server
 or with includes and everything
 
 ## Linux:
+
 First time
-```
-$ sudo apt install php-cgi php-xml python3-virtualenv (?)
+```shell
+$ sudo apt install php-cgi php-xml
+$ sudo apt install python3-virtualenv python2-pip-whl python2-setuptools-whl
 $ virtualenv -p python2 env
 $ source env/bin/activate
 $ pip install bottle eventlet
 $ ./ssi-server --skip-missing
 ```
-To-Do: Switch to Python3
 
 Second start (when environment is not activated)
 ```
@@ -37,7 +37,7 @@ $ ./ssi-server --skip-missing
 
 [Download](https://windows.php.net/download/) and unpack PHP into `c:\tools\php` for example.
 
-```
+```shell
 set path=%path%;c:\tools\php
 c:\Python39\Scripts\pip install virtualenv
 c:\Python39\Scripts\virtualenv.exe -p python2 env
