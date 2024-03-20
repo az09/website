@@ -21,8 +21,7 @@ or with includes and everything
 First time
 ```shell
 $ sudo apt install php-cgi php-xml
-$ sudo apt install python3-virtualenv python2-pip-whl python2-setuptools-whl
-$ virtualenv -p python2 env
+$ python3 -m venv env
 $ source env/bin/activate
 $ pip install bottle eventlet
 $ ./ssi-server --skip-missing
